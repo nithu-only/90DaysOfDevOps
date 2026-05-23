@@ -1,0 +1,525 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA>
+
+<div class=WordSection1>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Day 10
+Challenge – Linux File Permissions &amp; File Operations</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><b><span style='font-family:
+"Courier New"'>Task 1: Create Files</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Files Created</span></b></p>
+
+<p class=MsoPlainText style='margin-left:71.7pt;text-indent:-17.85pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>devops.txt (empty file)</span></p>
+
+<p class=MsoPlainText style='margin-left:71.7pt;text-indent:-17.85pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>notes.txt (file with
+content)</span></p>
+
+<p class=MsoPlainText style='margin-left:71.7pt;text-indent:-17.85pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>script.sh (shell script)</span></p>
+
+<p class=MsoPlainText style='margin-left:71.7pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Commands Used</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>touch
+devops.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>echo
+&quot;Linux file permissions practice&quot; &gt; notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>vim
+script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Content of script.sh:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>echo &quot;Hello DevOps&quot;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Verification</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>     </span></b><span class=o>ls</span> <span
+class=n>–l</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><span
+class=n>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Output:</span></b><span class=n><br>
+</span><b><span style='font-family:"Courier New"'>    </span></b><img
+width=597 height=233 id="Picture 3"
+src="day-10-file-permissions_files/image001.png"></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><b><span style='font-family:
+"Courier New"'>Task 2: Read Files</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Commands Used</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>cat
+notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>vim
+-R script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>head
+-n 5 /etc/passwd</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>tail
+-n 5 /etc/passwd</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:18.0pt'><b><span
+style='font-family:"Courier New"'>Observations</span></b></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>cat displays full file
+content</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>vim -R opens file in
+read-only mode</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>head and tail help
+inspect large system files quickly</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>Output:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'> </span></b><img width=590 height=383 id="Picture 1"
+src="day-10-file-permissions_files/image002.png"></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>Task 3: Understand Permissions</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>Permission Format:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:108.0pt'><span style='font-family:
+"Courier New"'>rwxrwxrwx</span></p>
+
+<p class=MsoPlainText style='margin-left:108.0pt'><span style='font-family:
+"Courier New"'>&#9474; &#9474; &#9474;</span></p>
+
+<p class=MsoPlainText style='margin-left:108.0pt'><span style='font-family:
+"Courier New"'>&#9474; &#9474; &#9492;&#9472;&#9472; Others</span></p>
+
+<p class=MsoPlainText style='margin-left:108.0pt'><span style='font-family:
+"Courier New"'>&#9474; &#9492;&#9472;&#9472;&#9472;&#9472; Group</span></p>
+
+<p class=MsoPlainText style='margin-left:108.0pt'><span style='font-family:
+"Courier New"'>&#9492;&#9472;&#9472;&#9472;&#9472;&#9472;&#9472; Owner</span></p>
+
+<p class=MsoPlainText style='margin-left:108.0pt'><span style='font-family:
+"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>Permission  Value</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>Read
+(r)    4</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>Write
+(w)   2</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>Execute(x) 
+1</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>Current Permissions:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -l devops.txt notes.txt script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><b><span style='font-family:
+"Courier New"'>Output:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'> </span><img
+width=514 height=143 id="Picture 9"
+src="day-10-file-permissions_files/image003.png"></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>Access Explanation:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:144.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Owner: read &amp; write</span></p>
+
+<p class=MsoPlainText style='margin-left:144.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Group: read only</span></p>
+
+<p class=MsoPlainText style='margin-left:144.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Others: read only</span></p>
+
+<p class=MsoPlainText style='margin-left:144.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>No </span><b><span
+style='font-size:13.5pt;font-family:"Times New Roman",serif'>execute</span></b><span
+style='font-family:"Courier New"'> permission for any file</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>Task 4: Modify Permissions</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>1. Make script.sh Executable</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>chmod +x script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>./script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>Output:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Hello</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>2. Make devops.txt Read-Only for All</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>chmod a-w devops.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>Permissions:</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>-r--r--r-- devops.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>3. Set notes.txt to 640</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>chmod 640 notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Permissions:</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>-rw-r----- notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>4. Create Directory project/ with 755</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>mkdir project</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>chmod 755 project</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Permissions:</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>drwxr-xr-x project/</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>           <b>Output:<br>
+                </b></span><img width=354 height=143 id="Picture 10"
+src="day-10-file-permissions_files/image004.png"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><b><span style='font-family:
+"Courier New"'>Task 5: Test Permissions</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>1. Writing to Read-Only File</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>echo &quot;test&quot; &gt;&gt; devops.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Error:</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Permission denied</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:72.0pt;margin-bottom:.0001pt;line-height:normal'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-family:"Courier New"'>2. Executing Without Execute Permission</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>chmod -x script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>./script.sh</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Error:</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>Permission denied<br>
+<br>
+<b>Output:</b></span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:36.0pt'><img
+width=434 height=114 id="Picture 11"
+src="day-10-file-permissions_files/image005.png"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Commands
+Used (Summary)</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>touch</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>echo</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>cat</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>vim</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>vim -R</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>ls -l</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>head</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>tail</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>chmod</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>mkdir</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## What I
+Learned</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Linux permissions control
+who can read, write, or execute files and directories</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Numeric and symbolic
+chmod both achieve the same goal in different ways</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Execute permission is
+mandatory to run scripts, even if read access exists</span></p>
+
+</div>
+
+</body>
+
+</html>

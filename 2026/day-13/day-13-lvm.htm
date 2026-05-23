@@ -1,0 +1,302 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>### Day 13 –
+Linux Volume Management (LVM)</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Goal</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>Learn LVM to
+manage storage flexibly – create, extend, and mount volumes.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>---</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Commands
+Used and Steps</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>1. Switch to
+root user</span></b></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>sudo
+–i</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><b><span style='font-family:
+"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>2. Create a
+virtual disk</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>dd
+if=/dev/zero of=/tmp/disk1.img bs=1M count=1024</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>losetup
+-fP /tmp/disk1.img</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>losetup
+-a   </span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><img width=625 height=221
+id="Picture 1" src="day-13-lvm_files/image001.png"></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>3. Check
+current storage</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>lsblk</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>pvs</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>vgs</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>lvs</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>df
+-h</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>  </span></b><img
+width=553 height=480 id="Picture 2" src="day-13-lvm_files/image002.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>4. Create
+Physical Volume</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>pvcreate
+/dev/loop0   </span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>pvs</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>  </span></b><img
+width=546 height=167 id="Picture 3" src="day-13-lvm_files/image003.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>5. Create
+Volume Group</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>vgcreate
+devops-vg /dev/loop0</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>vgs</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>     </span></b><img
+width=517 height=155 id="Picture 4" src="day-13-lvm_files/image004.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>6. Create
+Logical Volume</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>lvcreate
+-L 500M -n app-data devops-vg</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>lvs</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'> </span></b><img
+width=630 height=217 id="Picture 5" src="day-13-lvm_files/image005.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>7. Format and
+Mount Logical Volume</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>mkfs.ext4
+/dev/devops-vg/app-data</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>mkdir
+-p /mnt/app-data</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>mount
+/dev/devops-vg/app-data /mnt/app-data</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>df
+-h /mnt/app-data</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'> </span></b><img
+width=636 height=430 id="Picture 6" src="day-13-lvm_files/image006.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>8. Extend the
+Logical Volume</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>lvextend
+-L +200M /dev/devops-vg/app-data</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>resize2fs
+/dev/devops-vg/app-data</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>df
+-h /mnt/app-data</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'> </span></b><img
+width=634 height=369 id="Picture 7" src="day-13-lvm_files/image007.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## What I
+Learned</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Physical Volumes (PV),
+Volume Groups (VG), Logical Volumes (LV) form the core of LVM, enabling
+flexible storage management.</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Mounting and extending
+volumes can be done without downtime, allowing dynamic storage adjustments.</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Commands like pvs, vgs,
+lvs, and df -h are essential to monitor LVM structure and usage.</span></p>
+
+</div>
+
+</body>
+
+</html>

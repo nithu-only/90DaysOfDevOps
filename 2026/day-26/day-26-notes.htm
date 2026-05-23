@@ -1,0 +1,767 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>### Day 26 – GitHub CLI: Manage GitHub from Your
+Terminal<br>
+<br>
+## Task:1 Install and Authenticate<br>
+      1. Install the GitHub CLI on your machine<br>
+           </span></b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>Enter command in command prompt:<br>
+            winget install GitHub.cli</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>2. Authenticate with your GitHub
+account</span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>      </span></b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh auth
+login</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'> </span></b><img width=530
+height=269 id="Picture 1" src="day-26-notes_files/image001.jpg"></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>3. Verify you're logged in and
+check which account is active</span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>      </span></b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh auth
+status</span></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'> </span></b><img width=542
+height=162 id="Picture 2" src="day-26-notes_files/image002.jpg"></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>4. What authentication methods does
+gh support?</span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>      </span></b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh
+supports:</span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:108.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Browser-based
+OAuth (recommended)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:108.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&#8594;
+Opens browser for secure login</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:108.0pt;text-indent:
+-18.0pt'><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Personal
+Access Token (PAT)</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:108.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&#8594;
+Used for automation &amp; CI</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:108.0pt;text-indent:
+-18.0pt'><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>SSH
+authentication</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:108.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&#8594;
+Uses existing SSH keys</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:108.0pt;text-indent:
+-18.0pt'><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>GitHub
+Enterprise authentication</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:108.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&#8594;
+Supports enterprise servers</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task:2 Working with Repositories</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Create a
+new GitHub repo directly from the terminal — make it public with a README</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh repo
+create my-test-repo --public --clone --add-readme</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=554
+height=47 id="Picture 3" src="day-26-notes_files/image003.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=708
+height=399 id="Picture 4" src="day-26-notes_files/image004.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Clone a
+repo using gh instead of git clone</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh repo
+clone TrainWithShubham/python-for-devops</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt'><img width=608
+height=182 id="Picture 5" src="day-26-notes_files/image005.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>View
+details of one of your repos from the terminal </span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh repo
+view my-test-repo</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt'><img width=559
+height=159 id="Picture 6" src="day-26-notes_files/image006.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:72.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>List all
+your repositories</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh repo
+list</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=802
+height=220 id="Picture 7" src="day-26-notes_files/image007.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Open a repo
+in your browser directly from the terminal</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh repo
+view –web</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=880
+height=352 id="Picture 8" src="day-26-notes_files/image008.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>6.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Delete the
+test repo you created (be careful!)   </span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh auth
+refresh -h github.com -s delete_repo</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh repo
+delete my-test-repo –-yes</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt'><img width=880
+height=188 id="Picture 9" src="day-26-notes_files/image009.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>##Task:3 Issues</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Create an
+issue on one of your repos from the terminal — give it a title, body, and a
+label</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh issue
+create  --title &quot;Bug in login flow&quot;  --body &quot;Users cannot login
+after update&quot;  --label bug</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=832
+height=86 id="Picture 10" src="day-26-notes_files/image010.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>List all
+open issues on that repo</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh issue
+list</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=793
+height=44 id="Picture 11" src="day-26-notes_files/image011.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>View a
+specific issue by its number</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh issue
+view 1</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=586
+height=31 id="Picture 12" src="day-26-notes_files/image012.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Close an
+issue from the terminal</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh issue
+close 1 </span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=590
+height=33 id="Picture 13" src="day-26-notes_files/image013.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>How could
+you use&nbsp;gh issue&nbsp;in a script or automation?</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh issue
+can be scripted to:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Auto-create
+issues from monitoring alerts</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Create
+bug tickets from CI failures</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Generate
+weekly backlog items</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Track
+incidents automatically</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task:4 Pull Requests</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Create a
+branch, make a change, push it, and create a pull request entirely from the
+terminal</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>git
+checkout -b feature-update</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>echo
+&quot;update&quot; &gt;&gt; file.txt</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>git add .</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>git commit
+-am &quot;update file&quot;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>git push
+origin feature-update</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=935
+height=714 id="Picture 14" src="day-26-notes_files/image014.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>List all
+open PRs on a repo<br>
+Create a PR:</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr
+create –fill</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=833
+height=92 id="Picture 15" src="day-26-notes_files/image015.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=869
+height=278 id="Picture 16" src="day-26-notes_files/image016.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>To List
+open PRs</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr list</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=869
+height=130 id="Picture 17" src="day-26-notes_files/image017.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>View the
+details of your PR — check its status, reviewers, and checks</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr view
+1</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=1036
+height=212 id="Picture 18" src="day-26-notes_files/image018.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Merge your
+PR from the terminal</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr merge
+1 –merge</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Answer in
+your notes:</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>What merge methods does gh pr merge support?</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr merge
+--merge   # merge commit</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr merge
+--squash  # squash commits</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr merge
+--rebase  # rebase &amp; merge</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><b><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>How would you review someone else's PR using gh?</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr
+checkout 15     # checkout PR locally</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr
+review 15 --approve</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr
+review 15 --comment -b &quot;Looks good&quot;</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:90.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh pr
+review 15 --request-changes -b &quot;Please fix formatting&quot;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task : 5 GitHub Actions &amp; Workflows (Preview)</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>List the
+workflow runs on any public repo that uses GitHub Actions</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh run list</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>View the
+status of a specific workflow run</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh run view
+&lt;run-id&gt; --log</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Answer in
+your notes: How could gh run and gh workflow be useful in a CI/CD pipeline?</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh run
+&amp; gh workflow help:</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Monitor
+pipeline status from terminal</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Auto-fail
+deployments if checks fail</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Trigger
+workflows manually</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Fetch
+logs for debugging</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:90.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Integrate
+pipeline status into scripts</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 6: Useful gh Tricks</span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Explore and try these — add the
+ones you find useful to your git-commands.md:</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh api —
+make raw GitHub API calls from the terminal</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh api
+repos/:owner/:repo/issues</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=1188
+height=730 id="Picture 19" src="day-26-notes_files/image019.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh gist —
+create and manage GitHub Gists</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh gist
+create notes.txt</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh release
+— create and manage releases</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh release
+create v1.0 --notes &quot;First release&quot;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=954
+height=40 id="Picture 20" src="day-26-notes_files/image020.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh alias —
+create shortcuts for commands you use often</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh alias
+set prs &quot;pr list&quot;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh prs</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=823
+height=172 id="Picture 21" src="day-26-notes_files/image021.jpg"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh search
+repos — search GitHub repos from the terminal</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>gh search
+repos terraform aws</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt'><img width=1310
+height=748 id="Picture 22" src="day-26-notes_files/image022.jpg"></p>
+
+</div>
+
+</body>
+
+</html>

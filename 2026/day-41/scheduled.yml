@@ -1,0 +1,11 @@
+name: Scheduled Workflow
+
+on:
+  schedule:
+    - cron: '0 0 * * *'   # Runs daily at midnight UTC
+
+jobs:
+  daily-job:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Scheduled workflow running!"

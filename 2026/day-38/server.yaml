@@ -1,0 +1,11 @@
+server:
+  name: web-server
+  ip: 192.168.1.10
+  port: 8080
+
+database:
+  host: db.local
+  name: production_db
+  credentials:
+    user: admin
+    password: secret123

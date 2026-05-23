@@ -1,0 +1,13 @@
+name: Axata Darji
+role: DevOps Learner
+experience_years: 7.5
+learning: true
+
+tools:
+  - docker
+  - kubernetes
+  - terraform
+  - aws
+  - github-actions
+
+hobbies: [reading, travelling, cooking]

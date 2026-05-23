@@ -1,0 +1,539 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Day 11 –
+File Ownership Challenge (chown &amp; chgrp)</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Objective</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>The goal of Day
+11 is to understand and practice **Linux file and directory ownership**,
+including:</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>- User ownership</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>- Group ownership</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>- Changing
+ownership using `chown` and `chgrp`</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>- Applying
+ownership changes recursively</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>- Validating
+ownership using `ls -l`</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>---</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Task 1:
+Understanding File Ownership</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>###
+Command Used</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>ls
+–l</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><img width=543 height=76
+id="Picture 1" src="day-11-file-ownership_files/image001.png"></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Ownership Breakdown</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Owner &#8594; The user
+who owns the file (E.g. root)</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Group &#8594; The group
+associated with the file (E.g. root)</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Difference Between Owner and Group</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>The owner has primary
+control over the file (read/write/execute permissions).</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>The group allows shared
+access to users belonging to that group.</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>This model is essential
+for team-based access control in Linux systems.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Task 2:
+Basic </span>chown</b><b><span style='font-family:"Courier New"'> Operations</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+File Created</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>touch devops-file.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Check Current Ownership</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -l devops-file.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Create Users (if not present)</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo useradd tokyo</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo useradd berlin</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Change File Owner</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo chown tokyo devops-file.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><i><span
+style='font-family:"Courier New"'>sudo chown berlin devops-file.txt</span></i></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Verification</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -l devops-file.txt</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText>       <img width=604 height=213 id="Picture 3"
+src="day-11-file-ownership_files/image002.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Task 3:
+Basic chgrp Operations</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+File Created</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>touch team-notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Check Current Group</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -l team-notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Create Group</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo groupadd heist-team</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Change File Group</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo chgrp heist-team team-notes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Verification</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -l team-notes.txt</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>      </span></b><img
+width=586 height=209 id="Picture 9"
+src="day-11-file-ownership_files/image003.png"></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Task 4:
+Change Owner and Group Together</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+File Created</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>touch</span> project-config.yaml</p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Change Owner and Group (Single Command)</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo</span> <span style='font-family:"Courier New"'>chown</span>
+professor:heist-team project-config.yaml</p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Directory Created</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>mkdir</span> app-logs</p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Change Directory Ownership</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo</span> <span style='font-family:"Courier New"'>chown</span>
+berlin:heist-team app-logs</p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Verification</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls</span> -ld project-config.yaml app-logs</p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>           </span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>      </span><img
+width=760 height=275 id="Picture 10"
+src="day-11-file-ownership_files/image004.png"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Task 5:
+Recursive Ownership Changes</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Directory Structure Created</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>mkdir -p heist-project/vault</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>mkdir -p heist-project/plans</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>touch heist-project/vault/gold.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>touch heist-project/plans/strategy.conf</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Create Group</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo groupadd planners</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Recursive Ownership Change</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo chown -R professor:planners
+heist-project/</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>###
+Verification</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -lR heist-project/</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><img
+width=632 height=457 id="Picture 11"
+src="day-11-file-ownership_files/image005.png"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Task 6:
+Practice Challenge (Scenario-Based)</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>###
+Users Created</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+useradd tokyo</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+useradd berlin</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+useradd nairobi</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>###
+Groups Created</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+groupadd vault-team</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+groupadd tech-team</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>###
+Directory and Files Created</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>mkdir
+bank-heist</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>touch
+bank-heist/access-codes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>touch
+bank-heist/blueprints.pdf</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>touch
+bank-heist/escape-plan.txt</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>###
+Ownership Assignment</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+chown tokyo:vault-team bank-heist/access-codes.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+chown berlin:tech-team bank-heist/blueprints.pdf</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+chown nairobi:vault-team bank-heist/escape-plan.txt</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>###
+Final Verification</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -l bank-heist/</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><img
+width=617 height=359 id="Picture 12"
+src="day-11-file-ownership_files/image006.png"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## What I
+Learned</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>File ownership directly
+affects access control and security.</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>chown can modify both
+owner and group, while chgrp changes only group.</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Recursive ownership (-R)
+is critical for managing application directories and logs.</span></p>
+
+</div>
+
+</body>
+
+</html>

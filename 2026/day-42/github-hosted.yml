@@ -1,0 +1,37 @@
+name: GitHub Hosted Runner Demo
+
+on: [push]
+
+jobs:
+  ubuntu-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check Pre-installed Tools
+        run: |
+          docker --version
+          python3 --version
+          node --version
+          git --version
+      - name: Print OS Info
+        run: |
+          echo "OS: $(uname -s)"
+          echo "Hostname: $(hostname)"
+          echo "User: $(whoami)"
+
+  windows-job:
+    runs-on: windows-latest
+    steps:
+      - name: Print OS Info
+        run: |
+          echo "OS: $env:OS"
+          echo "Hostname: $env:COMPUTERNAME"
+          echo "User: $env:USERNAME"
+
+  macos-job:
+    runs-on: macos-latest
+    steps:
+      - name: Print OS Info
+        run: |
+          echo "OS: $(sw_vers -productName)"
+          echo "Hostname: $(hostname)"
+          echo "User: $(whoami)"

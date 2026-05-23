@@ -1,0 +1,635 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>### Day 18 – Shell Scripting: Functions &amp;
+Slightly Advanced Concepts</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Segoe UI Symbol",sans-serif'>&#127919;</span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> Goal</span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>Learn to write clean, reusable, and safe Bash scripts using
+functions, strict mode, and real-world system monitoring patterns.</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Segoe UI Symbol",sans-serif'>##  </span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Task 1:
+Basic Functions</span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>File: functions.sh</span></b></p>
+
+<p class=MsoNormal style='text-indent:36.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>     #!/bin/bash</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>greet() {</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>  echo
+&quot;Hello, $1!&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>add() {</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>  echo
+&quot;Sum: $(($1 + $2))&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'># Function
+calls</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>greet
+&quot;Axata&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>add 10 20</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>     <b>Output:<br>
+           </b></span><img width=373 height=188 id="Picture 1"
+src="day-18-scripting_files/image001.png"></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 2: Functions with Return Values (System
+Checks)</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>     File: disk_check.sh</span></b></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>           #!/bin/bash</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>check_disk() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Disk Usage:&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  df -h /</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>check_memory() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Memory Usage:&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  free -h</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>main() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  check_disk</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo
+&quot;-------------------&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  check_memory</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Main</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>     <b>Output:<br>
+ </b></span><img width=646 height=355 id="Picture 2"
+src="day-18-scripting_files/image002.png"></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 3: Strict Mode — set -euo pipefail</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>     File: strict_demo.sh</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>           </span></b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>#!/bin/bash</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>set -euo pipefail</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;=== Strict Mode Demo
+===&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;Demonstrating set -u
+(undefined variables)&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>if [[ -z &quot;${MY_VAR:-}&quot;
+]]; then</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;MY_VAR is undefined
+&#8594; handled safely using \${VAR:-}&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>else</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;MY_VAR value:
+$MY_VAR&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>fi</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;Demonstrating set -e
+(command failure)&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>if ls /this/path/does/not/exist
+&gt;/dev/null 2&gt;&amp;1; then</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Command
+succeeded&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>else</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Command failed &#8594;
+detected safely using if&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>fi</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;Demonstrating set -o
+pipefail (pipeline failure)&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>if echo &quot;hello&quot; | grep
+&quot;hello&quot; | grep &quot;world&quot; &gt;/dev/null; then</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Pipeline
+succeeded&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>else</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Pipeline failed
+&#8594; one command in the pipeline failed&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>fi</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;Script completed without
+crashing&quot;     </span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Output:</span></b></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'> </span><img width=549 height=352
+id="Picture 7" src="day-18-scripting_files/image003.png"></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Explanation :</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:144.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>set
+-e &#8594; Exit immediately if any command fails</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:144.0pt;text-indent:
+-18.0pt'><span style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>set
+-u &#8594; Exit if an undefined variable is used</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:144.0pt;text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>set
+-o pipefail &#8594; Fail the script if any command in a pipeline fails</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 4: Local Variables</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>     File: local_demo.sh</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>           </span></b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>#!/bin/bash</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>demo_local() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  local MESSAGE=&quot;I am
+local&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;Inside function:
+$MESSAGE&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>demo_global() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  MESSAGE=&quot;I am global&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>demo_local</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;Outside function:
+${MESSAGE:-Not Accessible}&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>demo_global</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>echo &quot;After global function:
+$MESSAGE&quot;</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>     <b>Output:<br>
+           </b></span><img width=387 height=197 id="Picture 5"
+src="day-18-scripting_files/image004.png"></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 5: Build Script — System Info Reporter</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>     File: system_info.sh</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>           </span></b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>#!/bin/bash</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>set -euo pipefail</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>print_header() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo
+&quot;==============================&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo &quot;$1&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  echo
+&quot;==============================&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>system_info() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  print_header &quot;System
+Information&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  hostname</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  uname -a</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>uptime_info() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  print_header &quot;Uptime&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  uptime</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>disk_usage() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  print_header &quot;Top 5 Disk
+Usage&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  du -h / 2&gt;/dev/null | sort -hr
+| head -5</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>memory_usage() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  print_header &quot;Memory
+Usage&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  free -h</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>cpu_processes() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  print_header &quot;Top 5 CPU
+Consuming Processes&quot;</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  ps -eo pid,comm,%cpu --sort=-%cpu
+| head -6</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>main() {</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  system_info</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  uptime_info</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  disk_usage</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  memory_usage</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>  cpu_processes</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>}</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Main</span></p>
+
+<p class=MsoNormal><span style='font-size:10.5pt;line-height:107%;font-family:
+"Courier New"'>     <b>Output:<br>
+      </b></span><img width=1179 height=798 id="Picture 6"
+src="day-18-scripting_files/image005.jpg"></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## What I Learned (Key Takeaways)</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Functions
+make shell scripts reusable, readable, and professional</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>set
+-euo pipefail is critical for safe automation and CI/CD pipelines</span></p>
+
+<p class=MsoListParagraphCxSpLast style='text-indent:-18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:Symbol'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Local
+variables prevent bugs caused by accidental variable overwrites</span></p>
+
+</div>
+
+</body>
+
+</html>

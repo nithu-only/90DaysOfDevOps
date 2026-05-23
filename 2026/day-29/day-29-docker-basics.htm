@@ -1,0 +1,686 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+@font-face
+	{font-family:"Segoe UI Symbol";
+	panose-1:2 11 5 2 4 2 4 2 2 3;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+pre
+	{mso-style-link:"HTML Preformatted Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:36.0pt;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";}
+span.hljs-builtin
+	{mso-style-name:hljs-built_in;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>### Day 29 – Introduction to Docker</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 1: What is Docker?</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>What is a
+Container?</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>A
+**container** is a lightweight, portable package that includes:</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- application code</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- runtime</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- libraries</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- dependencies</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- system tools</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Containers
+ensure software runs the same everywhere.</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Why Do We
+Need Containers?</span></b></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Before containers:</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- apps worked on one machine but
+failed on another</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- dependency conflicts were common</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- environment setup was
+time-consuming</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Containers solve this by packaging
+everything together.</span></p>
+
+<p class=MsoListParagraph style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Containers
+vs Virtual Machines</span></b></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='margin-left:36.0pt;border-collapse:collapse;border:none'>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Feature</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Containers</span></b></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border:solid windowtext 1.0pt;
+  border-left:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Virtual
+  Machines</span></b></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>OS</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Share host
+  OS</span></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Each VM has
+  full OS</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Size</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>MBs</span></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>GBs</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Startup
+  Time</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Seconds</span></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Minutes</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Performance</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Near native</span></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Overhead
+  from hypervisor</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Isolation</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Process-level</span></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Full OS
+  isolation</span></p>
+  </td>
+ </tr>
+ <tr>
+  <td width=107 valign=top style='width:230.65pt;border:solid windowtext 1.0pt;
+  border-top:none;padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><b><span style='font-size:10.5pt;font-family:"Courier New"'>Use Case</span></b></p>
+  </td>
+  <td width=132 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Microservices,
+  CI/CD</span></p>
+  </td>
+  <td width=98 valign=top style='width:230.7pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  padding:0cm 5.4pt 0cm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-size:10.5pt;font-family:"Courier New"'>Running
+  different OS</span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Containers are lightweight and
+fast.  </span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>VMs provide stronger isolation.</span></p>
+
+<p class=MsoListParagraph style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> Docker
+Architecture</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Docker uses a **client-server
+architecture**:</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>**Docker Client**</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Command line interface (`docker
+run`, `docker build`)</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Sends requests to the daemon</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>**Docker Daemon**</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Builds images</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Runs containers</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Manages networks &amp; volumes</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>**Docker Images**</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Read-only templates used to
+create containers</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>**Docker Containers**</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Running instances of images</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>**Docker Registry (Docker Hub)**</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>- Stores and distributes images</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoListParagraph style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Architecture
+in Simple Words</span></b></p>
+
+<p class=MsoNormal style='margin-left:36.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>When you run:</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker run
+nginx</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Segoe UI Symbol",sans-serif'>&#10004;</span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> Docker
+client sends request</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Segoe UI Symbol",sans-serif'>&#10004;</span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> Docker
+daemon checks local images</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Segoe UI Symbol",sans-serif'>&#10004;</span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> If not
+found &#8594; pulls from Docker Hub</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Segoe UI Symbol",sans-serif'>&#10004;</span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> Creates
+container from image</span></p>
+
+<p class=MsoNormal style='margin-left:108.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Segoe UI Symbol",sans-serif'>&#10004;</span><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'> Container
+starts running</span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 2: Install Docker</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Verify the
+installation:<br>
+</span></b><b><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=405 height=214 id="Picture 1"
+src="day-29-docker-basics_files/image001.png"></span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Run the
+hello-world container</span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=375 height=216 id="Picture 2"
+src="day-29-docker-basics_files/image002.png"></span></b></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><b><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>What happened?<br>
+</span></b><span style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Docker
+contacted Docker Hub</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Downloaded hello-world image</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Created container</span></p>
+
+<p class=MsoNormal style='margin-left:54.0pt'><span style='font-size:10.5pt;
+line-height:107%;font-family:"Courier New"'>Ran it and printed a message<b><br>
+<br>
+</b></span></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 3: Run Real Containers</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Run an
+Nginx container and access it in your browser</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker run
+-d -p 8080:80 nginx</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=264 height=116 id="Picture 4"
+src="day-29-docker-basics_files/image003.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=517
+height=180 id="Picture 3" src="day-29-docker-basics_files/image004.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Run an
+Ubuntu container in interactive mode — explore it like a mini Linux machine</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker run
+-it ubuntu bash</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=322 height=166 id="Picture 5"
+src="day-29-docker-basics_files/image005.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>List all
+running containers</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker ps</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=408 height=108 id="Picture 6"
+src="day-29-docker-basics_files/image006.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>List all
+containers (including stopped ones)</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=411 height=118 id="Picture 7"
+src="day-29-docker-basics_files/image007.png"></span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Stop and
+remove a container</span></b></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=407 height=179 id="Picture 8"
+src="day-29-docker-basics_files/image008.png"></span></b></p>
+
+<p class=MsoNormal><b><span style='font-size:10.5pt;line-height:107%;
+font-family:"Courier New"'>## Task 4: Explore</span></b></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>1.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Run a
+container in detached mode — what's different?</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Docker run –d
+nginx</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=215 height=58 id="Picture 9" src="day-29-docker-basics_files/image009.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>2.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Give a
+container a custom name</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker run
+-d --name my-nginx nginx</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=228 height=52 id="Picture 10"
+src="day-29-docker-basics_files/image010.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>3.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Map a port
+from the container to your host</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker run
+-d -p 9090:80 nginx</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=243 height=53 id="Picture 11"
+src="day-29-docker-basics_files/image011.png"></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><img width=435
+height=163 id="Picture 12" src="day-29-docker-basics_files/image012.png"></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>4.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Check logs
+of a running container</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker logs
+my-nginx</span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=318 height=176 id="Picture 13"
+src="day-29-docker-basics_files/image013.png"></span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt;text-indent:-18.0pt'><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>5.<span
+style='font:7.0pt "Times New Roman"'>&nbsp; </span></span></b><b><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>Run a
+command inside a running container</span></b></p>
+
+<p class=MsoListParagraphCxSpMiddle style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'>docker exec
+-it my-nginx bash</span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:54.0pt'><span
+style='font-size:10.5pt;line-height:107%;font-family:"Courier New"'><img
+width=208 height=64 id="Picture 14"
+src="day-29-docker-basics_files/image014.png"></span></p>
+
+</div>
+
+</body>
+
+</html>

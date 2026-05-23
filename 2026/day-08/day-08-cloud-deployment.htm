@@ -1,0 +1,399 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:8.0pt;
+	margin-left:0cm;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+h1
+	{mso-style-link:"Heading 1 Char";
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:0cm;
+	margin-left:0cm;
+	margin-bottom:.0001pt;
+	line-height:107%;
+	page-break-after:avoid;
+	font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;
+	font-weight:normal;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:18.0pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin-right:0cm;
+	margin-left:0cm;
+	font-size:13.5pt;
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-link:"Plain Text Char";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	font-size:10.5pt;
+	font-family:Consolas;}
+p
+	{margin-right:0cm;
+	margin-left:0cm;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+code
+	{font-family:"Courier New";}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-link:"Plain Text";
+	font-family:Consolas;}
+span.o
+	{mso-style-name:\037Co;}
+span.n
+	{mso-style-name:\037Cn;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	font-family:"Times New Roman",serif;
+	font-weight:bold;}
+span.m
+	{mso-style-name:\037Cm;}
+span.l
+	{mso-style-name:\037Cl;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	font-family:"Calibri Light",sans-serif;
+	color:#2E74B5;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 75.1pt 72.0pt 75.05pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-CA link="#0563C1" vlink="#954F72">
+
+<div class=WordSection1>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Day 08 –
+Cloud Server Setup: Docker, Nginx &amp; Web Deployment</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>&nbsp;</span></b></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Objective</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>Deploy a real web
+server on the cloud, manage it via SSH, configure network access, and extract
+service logs — simulating real-world DevOps production tasks.</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>---</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Cloud
+Provider</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>- AWS EC2 (Free
+Tier)  </span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>  *(Ubuntu 24.04
+LTS)*</span></p>
+
+<p class=MsoPlainText><img width=825 height=378 id="Picture 8"
+src="day-08-cloud-deployment_files/image001.jpg"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>---</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Commands
+Used</span></b></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Connect to EC2 via SSH</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>chmod 400 devops-key.pem</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;
+margin-left:18.0pt;margin-bottom:.0001pt;text-indent:36.0pt;line-height:normal;
+text-autospace:none'><span style='font-size:10.5pt;font-family:"Courier New"'>ssh
+-i lab-8-practice-key.pem <a href="mailto:ubuntu@35.89.25.249">ubuntu@35.89.25.249</a></span></p>
+
+<p class=MsoNormal style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+normal;text-autospace:none'><span style='font-size:10.5pt;font-family:"Courier New"'>      </span><img
+border=0 width=716 height=533 id="Picture 1"
+src="day-08-cloud-deployment_files/image002.png"></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Update System Packages</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>sudo apt update &amp;&amp; sudo apt upgrade
+-y</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Install Nginx</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>sudo apt install nginx –y</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><img
+border=0 width=1085 height=984 id="Picture 2"
+src="day-08-cloud-deployment_files/image003.png"></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Verify Nginx Status</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>systemctl status nginx</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><img
+border=0 width=901 height=332 id="Picture 4"
+src="day-08-cloud-deployment_files/image004.png"></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Enable Nginx on Boot</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>sudo systemctl enable nginx</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:54.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Check Open Port</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>sudo ss -tulpn | grep nginx</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>     ## Security
+Group Configuration</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:18.0pt'><span
+style='font-family:"Courier New"'>Inbound rules configured:</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>SSH &#8594; Port 22 (My
+IP)</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>HTTP &#8594; Port 80
+(0.0.0.0/0)</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>     ## Verification:</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>http://</span> <span style='font-family:"Courier New"'>35.89.25.249</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='text-indent:36.0pt'><span style='font-family:"Courier New"'>##
+Result: </span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>      </span><img
+border=0 width=689 height=234 id="Picture 5"
+src="day-08-cloud-deployment_files/image005.jpg"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Nginx Log
+Management</span></b></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>View Logs</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+cat /var/log/nginx/access.log</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>sudo
+cat /var/log/nginx/error.log</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Save Logs to File</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>sudo cat /var/log/nginx/access.log &gt;
+~/nginx-logs.txt</span></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Verify Log File</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:36.0pt'><span
+style='font-family:"Courier New"'>ls -lh nginx-logs.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>cat
+nginx-logs.txt</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><img border=0 width=814
+height=327 id="Picture 6" src="day-08-cloud-deployment_files/image006.png"></p>
+
+<p class=MsoPlainText><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;
+</span></span><span style='font-family:"Courier New"'>Download Logs to Local
+Machine</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>scp
+-i devops-key.pem ubuntu@35.89.25.249:~/nginx-logs.txt </span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><img border=0 width=775
+height=150 id="Picture 7" src="day-08-cloud-deployment_files/image007.png"></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## Challenges
+Faced</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Nginx page not accessible
+initially</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Root cause: HTTP (port
+80) not allowed in Security Group</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Fix: Added inbound rule
+for port 80</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:36.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Permission denied while
+accessing logs</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt;text-indent:-18.0pt'><span
+style='font-family:"Courier New"'>o<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Fix: Used sudo to read
+logs from /var/log/nginx</span></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText><b><span style='font-family:"Courier New"'>## What I
+Learned</span></b></p>
+
+<p class=MsoPlainText style='margin-left:72.0pt'><span style='font-family:"Courier New"'>&nbsp;</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>How to provision and
+access a cloud VM using SSH</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Installing and managing
+services using systemctl</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Importance of security
+groups/firewall rules in cloud networking</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>Practical log extraction
+and transfer using scp</span></p>
+
+<p class=MsoPlainText style='margin-left:18.0pt;text-indent:-18.0pt'><span
+style='font-family:Symbol'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"Courier New"'>How production servers
+expose services securely over the internet</span></p>
+
+</div>
+
+</body>
+
+</html>

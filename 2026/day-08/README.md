@@ -114,4 +114,33 @@ This exercise teaches you:
 
 These are core skills for any DevOps engineer working in production.
 
+---
 
+
+## Submission
+1. Fork this `90DaysOfDevOps` repository
+2. Navigate to the `2026/day-08/` folder
+3. Add your `day-08-cloud-deployment.md` file
+4. Add your `nginx-logs.txt` file
+5. Add screenshots (name them: `ssh-connection.png`, `nginx-webpage.png`, `docker-nginx.png`)
+6. Commit and push your changes to your fork
+
+---
+
+## Learn in Public
+Share your Day 08 progress on LinkedIn:
+
+- Post 2-3 lines on deploying your first cloud server
+- Share screenshot of your Nginx webpage
+- Mention one challenge you faced and solved
+- Optional: Share your instance IP (if comfortable)
+
+Use hashtags:
+```
+#90DaysOfDevOps
+#DevOpsKaJosh
+#TrainWithShubham
+```
+
+Happy Learning
+**TrainWithShubham**
